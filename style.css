@@ -91,4 +91,5 @@ header h2 {
     border-top: 15px solid white;
     border-bottom: 40px solid white;
     max-width: 85%;
+    box-shadow: 5px 5px 35px black;
 }
