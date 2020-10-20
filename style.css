@@ -35,6 +35,8 @@ header {
     padding-top: 15px;
     background-color: #252525;
     padding-bottom: 30px;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
 }
 
 header .flags {
