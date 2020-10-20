@@ -11,6 +11,7 @@ font-family: 'Jura', sans-serif;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,9 +32,40 @@ h4 {
 }
 
 header {
-    padding-top: 30px;
+    padding-top: 15px;
     background-color: #252525;
     padding-bottom: 30px;
+}
+
+header .flags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 35px;
+    width: 70px;
+    justify-content: space-around;
+    align-content: center;
+    right: 0;
+    margin-right: 20px;
+    margin-left: auto;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+}
+
+header .flags a {
+    height: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header .flags a img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+header .name-and-avatar {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -58,5 +90,5 @@ header h2 {
     border-right: 30px solid white;
     border-top: 15px solid white;
     border-bottom: 40px solid white;
-    max-width: 70%;
+    max-width: 85%;
 }
