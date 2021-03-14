@@ -1,0 +1,39 @@
+@import "./header";
+@import "./variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+/* How to import each font: 
+font-family: 'Krona One', sans-serif;
+font-family: 'Jura', sans-serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /*
+    background-color: #d9fcdf;
+    */
+    background-color: $background-gray;
+    color: white;
+    font-size: 18px;
+}
+
+a {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Jura', sans-serif;
+}

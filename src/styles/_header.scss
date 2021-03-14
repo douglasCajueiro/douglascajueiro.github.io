@@ -1,0 +1,65 @@
+@import './variables';
+header {
+  padding-top: 15px;
+  background-color: $header-dark;
+  padding-bottom: 30px;
+  border-bottom-right-radius: 45px;
+  border-bottom-left-radius: 45px;
+
+
+  .flags {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 35px;
+    width: 70px;
+    justify-content: space-around;
+    align-content: center;
+    right: 0;
+    margin-right: 20px;
+    margin-left: auto;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    box-shadow: 5px 5px 10px black;
+    a {
+      height: 25px;
+      text-decoration: none;
+      text-align: center;
+      img {
+        width: 25px;
+        border-radius: 50%;
+      }
+    }
+
+  }
+
+  .name-and-avatar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    h2 {
+      margin-bottom: 10px;
+    }
+    .avatar {
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+      align-self: center;
+      background-color: white;
+      border-radius: 50%;
+      border-top-left-radius: 0px;
+      border-left: 30px solid white;
+      border-right: 30px solid white;
+      border-top: 15px solid white;
+      border-bottom: 40px solid white;
+      max-width: 85%;
+      box-shadow: 5px 5px 35px black;
+    }
+  }
+
+
+}
