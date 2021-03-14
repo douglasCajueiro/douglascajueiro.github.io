@@ -23,12 +23,17 @@ body {
     background-color: #d9fcdf;
     */
     background-color: $background-gray;
-    color: white;
+    color: $my-white;
     font-size: 18px;
 }
 
 a {
-    color: white;
+    color: $my-white;
+    text-decoration: none;
+}
+
+a:visited {
+  color: $my-dark-green;
 }
 
 h1,
