@@ -1,18 +1,18 @@
 @import './variables';
 header {
-  padding-top: 15px;
+  padding-top: 20px;
   background-color: $header-dark;
   padding-bottom: 30px;
-  border-bottom-right-radius: 45px;
-  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
 
 
   .flags {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 35px;
-    width: 70px;
+    height: 44px;
+    width: 90px;
     justify-content: space-around;
     align-content: center;
     right: 0;
@@ -22,15 +22,34 @@ header {
     background-color: white;
     position: relative;
     box-shadow: 5px 5px 10px black;
-    a {
-      height: 25px;
-      text-decoration: none;
-      text-align: center;
+    
       img {
-        width: 25px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
+        filter: grayscale(1)
+        contrast(300%)
+        opacity(70%);
+        cursor: pointer;
+        transition: ease-in-out 300ms;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       }
-    }
+      img:hover {
+        filter: grayscale(0)
+        opacity(100%);
+        transition: ease-in-out 300ms;
+      }
+      .selected-language {
+        filter: 
+        grayscale(0)
+        opacity(100%);
+        
+      }
+      .selected-language:hover {
+        box-shadow: 1px 1px 2px black;
+
+      }
+    
 
   }
 
@@ -38,9 +57,11 @@ header {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
+    max-width: 75%;
     h2 {
       margin-bottom: 10px;
     }
